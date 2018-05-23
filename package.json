@@ -1,0 +1,34 @@
+{
+  "name": "validate-gitlab-ci",
+  "version": "1.0.0",
+  "description": "A simple package to hit a gitlab endpoint and validate the ci yaml file",
+  "main": "validate-gitlab-ci.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "validate-gitlab-ci": "./validate-gitlab-ci.js"
+  },
+  "author": "Elvey <matt.elvey@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "js-yaml": "^3.11.0",
+    "minimist": "^1.2.0",
+    "node-fetch": "^2.1.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melvey/validate-gitlab-ci.git"
+  },
+  "bugs": {
+    "url": "https://github.com/melvey/validate-gitlab-ci/issues"
+  },
+  "homepage": "https://github.com/melvey/validate-gitlab-ci#readme",
+  "keywords": [
+    "gitlab",
+    "yaml",
+    "ci",
+    "validate"
+  ]
+}
