@@ -18,6 +18,6 @@ if(!args.filename) {
 	process.exit(-1);
 };
 
-validateGitlabCi(args.server, args.filename).then(() => {
+validateGitlabCi(args.server || 'https://gitlab.com', args.filename).then(() => {
 	process.exit();
 });
