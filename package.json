@@ -1,6 +1,6 @@
 {
   "name": "validate-gitlab-ci",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple package to hit a gitlab endpoint and validate the ci yaml file",
   "main": "validate-gitlab-ci.js",
   "scripts": {
