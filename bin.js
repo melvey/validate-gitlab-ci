@@ -8,16 +8,17 @@ function showUsage() {
 	console.log(
 		'usage validate-gitlab-ci --server <gitlab server> --filename <filename>\n'
 		+ 'arguments:\n'
-		+ '	--filename 		Path to .gitlab-ci file to validate\n'
-		+ '	--server: 		Base URL for the gitlab server to validate against'
+		+ '	--filename 		Path to .gitlab-ci file to validate. Default .gitlab-ci.yml\n'
+		+ '	--server: 		Base URL for the gitlab server to validate against. Default https://gitlab.com/\n'
+		+ '	--help: 		Show this help'
 	);
 }
 
-if(!args.filename) {
+if(args.help) {
 	showUsage();
 	process.exit(-1);
 };
 
-validateGitlabCi(args.server || 'https://gitlab.com', args.filename).then(() => {
+validateGitlabCi(args.server || 'https://gitlab.com', args.filename || '.gitlab-ci.yml').then(() => {
 	process.exit();
 });
